@@ -3,7 +3,7 @@ start_time = time.process_time()
 
 from coastal_data import data_preparation as prep
 
-datapath = '../../2_data_copies/2_altimetry/1_Sentinel-3/2_S3B_ters/'
+datapath = '~/data_temp/'
 filename_reprocessed = 'S3B_SR_2_WAT____20181126T201732_20181126T210147_20181222T115028_2654_019_099______MAR_O_NT_003_enhanced.nc'
 filename_input = 'S3B_SR_2_WAT____20181126T201732_20181126T210147_20181222T115028_2654_019_099______MAR_O_NT_003.nc'
 filename_output = 'S3B_SR_2_WAT____20181126T201732_20181126T210147_20181222T115028_2654_019_099______MAR_O_NT_003_mod.nc'
