@@ -8,9 +8,10 @@ from geoslurp.config import setInfoLevel
 setInfoLevel()
 
 from coastal_data import data_preparation as prep
+import os
 
 datapath_in = '../../data_temp/'
-datapath_out = '~/data_out/'
+datapath_out = '/home/aschennellers/data_out/'
 
 url='ftp://ftp.itc.nl/incoming/aschenneller/'
 dist2coast = 100 * 1e3 # [m]
@@ -41,7 +42,8 @@ for item in gen:
             filename_input = item2[0]
 
     prep.prepare_s3_data(datapath_in, datapath_out, filename_reprocessed, filename_input, filename_output, dist2coast)
-
+    
+    os.system("smbclient //ad.utwente.nl/ITC/WRS/Group -D 2_Research/PhDs/Aschenneller/Sentinel-3B/ -c 'lcd " + datapath_out + "; put " + filename_output + "'")
 #end_time = time.process_time()
 #ex_time = end_time - start_time
 #rint("Done. Needed ", ex_time, "seconds.")
