@@ -43,7 +43,7 @@ for item in gen:
 
     prep.prepare_s3_data(datapath_in, datapath_out, filename_reprocessed, filename_input, filename_output, dist2coast)
     
-    os.system("smbclient //ad.utwente.nl/ITC/WRS/Group -D 2_Research/PhDs/Aschenneller/Sentinel-3B/ -c 'lcd " + datapath_out + "; put " + filename_output + "'")
+    os.system("smbclient -A ~/.smbclient.conf //ad.utwente.nl/ITC/WRS/Group -D 2_Research/PhDs/Aschenneller/Sentinel-3B/ -c 'lcd " + datapath_out + "; put " + filename_output + "'")
 #end_time = time.process_time()
 #ex_time = end_time - start_time
 #rint("Done. Needed ", ex_time, "seconds.")
