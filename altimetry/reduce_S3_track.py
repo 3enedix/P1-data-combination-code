@@ -25,16 +25,17 @@ for folder in folder_crawler:
     
     #crw2 = Crawler(url_temp, auth=auth, pattern="*xy*") # 2nd crawler to get the filenames # giving a pattern does not change the output?
     crw2 = Crawler(url_temp, auth=auth)
-    files = list(crw2.ls())
-    
-    related_filenames = [] # list of tuples, each tuple contains the filenames of the two corresponding .nc-files, 1st element: input file, 2nd element: reprocessed file
-
+    files = list(crw2.ls())    
+       
+    # produce a list of tuples containing the filenames of the two corresponding .nc-files, 1st element: input file, 2nd element: reprocessed file
+    related_filenames = [] 
     for i in range(0, len(files)):
         if '_enhanced' in files[i][0]:
             repr_fname_temp = files[i][0]
             orig_filename_temp = repr_fname_temp.replace('_enhanced', '')
             related_filenames.append((orig_filename_temp, repr_fname_temp))
-            
+    
+    # download and combine each tuple of input and reprocessed files
     for i in range(0, len(related_filenames)):
         filename_input = related_filenames[i][0]
         filename_reprocessed = related_filenames[i][1]
