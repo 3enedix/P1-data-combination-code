@@ -49,5 +49,5 @@ for folder in folder_crawler:
 
         prep.prepare_s3_data(datapath_in, datapath_out, filename_reprocessed, filename_input, filename_output, dist2coast)
     
-        os.system("smbclient -A ~/.smbclient.conf //ad.utwente.nl/ITC/WRS/Group -D 2_Research/PhDs/Aschenneller/Sentinel-3B/ -c 'lcd " + datapath_out + "; put " + filename_output + "'")
+        os.system("smbclient -A ~/.smbclient.conf //ad.utwente.nl/ITC/WRS/Group -D 2_Research/PhDs/Aschenneller/Sentinel-3/ -c 'lcd " + datapath_out + "; put " + filename_output + "'")
         os.system("rm " + datapath_in + "/* " + datapath_out + "/*")
