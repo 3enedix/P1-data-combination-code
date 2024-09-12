@@ -1,5 +1,5 @@
 # P1-data-combination-code
-Code accompanying the manuscript "Changing Sea Level, Changing Shorelines: Comparison of Remote Sensing Observations at the Terschelling Barrier Island"
+Code accompanying the manuscript "Changing Sea Level, Changing Shorelines: Integration of Remote Sensing Observations at the Terschelling Barrier Island"
 
 Notebooks are related to the following data/methods sections and can be run in this order if not otherwise specified. Some notebooks require installation of additional modules, such as [CoastSat](https://github.com/3enedix/CoastSat), [coastal_data](https://github.com/3enedix/coastal-sea-level/tree/main/coastal_data), [pyfes](https://github.com/CNES/aviso-feshttps://github.com/CNES/aviso-fes) and [ttide](https://github.com/moflaher/ttide_py).
 
