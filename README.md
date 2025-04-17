@@ -1,5 +1,5 @@
 # P1-data-combination-code
-Code accompanying the paper "Changing Sea Level, Changing Shorelines: Integration of Remote Sensing Observations at the Terschelling Barrier Island"
+Code accompanying the paper ["Changing Sea Level, Changing Shorelines: Integration of Remote Sensing Observations at the Terschelling Barrier Island"](https://nhess.copernicus.org/articles/24/4145/2024/)
 
 [![DOI 10.4121/fd84a556-e403-48ba-b302-a759b4603fa4.v1](https://data.4tu.nl/v3/datasets/22215562/doi-badge.svg)](https://data.4tu.nl/datasets/6f8f8535-5b4f-4abb-b0f6-89a6a80c13bf)
 
